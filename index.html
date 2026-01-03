@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHM Montafamille test</title>
+    <title>Simple HTML Calendar - November 2024</title>
     <style>
         /* Basic page styling */
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -16,9 +17,14 @@
             margin: 0;
         }
 
+        /* Wrapper for content */
+        .content-wrapper {
+            width: 80%;
+            max-width: 450px;
+        }
+
         /* Calendar container */
         .calendar {
-            width: 450px;
             border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -64,30 +70,61 @@
             background-color: #ffdd57;
             font-weight: bold;
         }
+
+        /* Image styling */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
-    <h1>Das ist ein test</h1>
-    <div><img src="MobilhomeLaLande974bis02.jpg" alt="title example"/></div>
-    <!-- Calendar Container -->
-    <div class="calendar">
-        <!-- Month and Year Header -->
-        <div class="calendar-header">November 2024</div>
+    <!-- Main Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Headline -->
+        <h1 style="text-align: center;">Montafamille test</h1>
 
-        <!-- Days of the Week -->
-        <div class="calendar-days">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="MobilhomeLaLande974bis02.jpg" alt="Placeholder Image">
         </div>
 
-        <!-- Calendar Dates -->
-        <div class="calendar-dates">
-            <!-- Blank spaces for days before the month starts on Friday -->
-            <div></div> <div></div> <div></div> <div></div> <div></div> <div class="today">1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> <div>8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div> <div>19</div><div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div> <div>25</div> <div>26</div><div>27</div> <div>28</div> <div>29</div> <div>30</div> 
+        <!-- Calendar Container -->
+        <div class="calendar">
+            <!-- Month and Year Header -->
+            <div class="calendar-header">November 2024</div>
+
+            <!-- Days of the Week -->
+            <div class="calendar-days">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <!-- Calendar Dates -->
+            <div class="calendar-dates">
+                <!-- Blank spaces for days before the month starts on Friday -->
+                <div></div> <div></div> <div></div> <div></div> <div></div> 
+                <div class="today">1</div> <div>2</div> <div>3</div> <div>4</div> 
+                <div>5</div> <div>6</div> <div>7</div> <div>8</div> <div>9</div> 
+                <div>10</div> <div>11</div> <div>12</div> <div>13</div> 
+                <div>14</div> <div>15</div> <div>16</div> <div>17</div> 
+                <div>18</div> <div>19</div> <div>20</div> <div>21</div> 
+                <div>22</div> <div>23</div> <div>24</div> <div>25</div> 
+                <div>26</div> <div>27</div> <div>28</div> <div>29</div> <div>30</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
